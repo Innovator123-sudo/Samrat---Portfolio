@@ -1,0 +1,20 @@
+# Samrat Bhusal
+
+Front-end developer &amp; creative technologist portfolio — a drivable 3D road-trip journey.
+
+## Site
+- / — 3D road-trip portfolio (drivable journey through project billboards)
+- / — ?static=1 — static reading edition of the portfolio
+
+## Sections
+- Hero / drive experience — 3D highway scene (Three.js, React Three Fiber)
+- Billboards — project cards (AI, realtime 3D, frontend craft)
+- End card — closing stop with contact details
+- Static reading edition — non-WebGL, print-friendly layout
+
+## Contact
+- Email: bhusalmohan83@gmail.com
+- GitHub: https://github.com/Innovator123-sudo
+- Instagram: https://www.instagram.com/samrat_kun/
+- Facebook: https://www.facebook.com/samrat.bhusal.395
+- Location: Devdaha, Nepal

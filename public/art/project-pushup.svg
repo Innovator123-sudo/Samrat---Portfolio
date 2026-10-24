@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Pushup Pro interface</title>
+  <desc id="desc">Dark fitness interface with a pose-tracked skeleton, rep counter and battle status.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1b1a"/>
+      <stop offset="0.55" stop-color="#102623"/>
+      <stop offset="1" stop-color="#1a2c28"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#69e0c2" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#c98a3d" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#9ad9c6" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect width="1200" height="800" fill="url(#grid)"/>
+  <circle cx="960" cy="150" r="360" fill="url(#glow)"/>
+
+  <g font-family="Manrope, Arial, sans-serif" fill="#eef5ef">
+    <text x="70" y="92" font-size="24" font-weight="700" letter-spacing="1">PUSHUP PRO</text>
+    <text x="70" y="122" font-size="15" fill="#7ea99a" letter-spacing="2.4">REAL-TIME AI BATTLE ARENA</text>
+    <g transform="translate(1030 84)">
+      <rect width="104" height="34" rx="17" fill="#16352f" stroke="#2f6b5d"/>
+      <circle cx="18" cy="17" r="5" fill="#69e0c2"/>
+      <text x="32" y="22" font-size="12" fill="#a8d8c9" letter-spacing="1">LIVE</text>
+    </g>
+  </g>
+
+  <g transform="translate(70 178)">
+    <rect width="700" height="480" rx="18" fill="#0a1614" stroke="#25473f"/>
+    <g opacity="0.5" stroke="#3f7f6d" stroke-width="1">
+      <path d="M0 120H700M0 240H700M0 360H700"/>
+      <path d="M140 0V480M280 0V480M420 0V480M560 0V480"/>
+    </g>
+    <rect x="24" y="24" width="122" height="28" rx="6" fill="#123029"/>
+    <text x="38" y="43" font-family="Manrope, Arial, sans-serif" font-size="12" fill="#8fd3bd" letter-spacing="1.4">CAMERA 01</text>
+
+    <g stroke="#69e0c2" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <circle cx="360" cy="206" r="25" fill="#69e0c2" stroke="none"/>
+      <path d="M360 231 336 300 302 250"/>
+      <path d="M360 231 390 296 424 244"/>
+      <path d="M336 300 312 384 280 448"/>
+      <path d="M390 296 414 382 446 444"/>
+      <path d="M336 300 388 304 390 296"/>
+      <path d="M330 246 360 231 392 246" stroke="#c98a3d" stroke-width="5"/>
+    </g>
+    <g fill="#c98a3d">
+      <circle cx="302" cy="250" r="8"/>
+      <circle cx="424" cy="244" r="8"/>
+      <circle cx="280" cy="448" r="8"/>
+      <circle cx="446" cy="444" r="8"/>
+    </g>
+    <rect x="24" y="430" width="250" height="26" rx="5" fill="#123029"/>
+    <text x="38" y="448" font-family="IBM Plex Mono, monospace" font-size="11" fill="#8fd3bd" letter-spacing="1">POSE LOCK · 2 ARMS</text>
+  </g>
+
+  <g transform="translate(812 178)" font-family="Manrope, Arial, sans-serif">
+    <rect width="318" height="224" rx="18" fill="#0d1e1b" stroke="#2a5148"/>
+    <text x="26" y="42" font-size="12" fill="#7ea99a" letter-spacing="2">YOUR REPS</text>
+    <text x="26" y="138" font-size="92" font-weight="700" fill="#f2f8f2">37</text>
+    <text x="26" y="174" font-size="14" fill="#8fd3bd">FORM 92 / 100</text>
+    <rect x="26" y="190" width="266" height="7" rx="3.5" fill="#1c3b34"/>
+    <rect x="26" y="190" width="244" height="7" rx="3.5" fill="#69e0c2"/>
+  </g>
+
+  <g transform="translate(812 426)" font-family="Manrope, Arial, sans-serif">
+    <rect width="318" height="232" rx="18" fill="#0d1e1b" stroke="#2a5148"/>
+    <text x="26" y="42" font-size="12" fill="#7ea99a" letter-spacing="2">OPPONENT</text>
+    <text x="26" y="112" font-size="64" font-weight="700" fill="#e9b46d">34</text>
+    <text x="26" y="142" font-size="14" fill="#c9a477">BOT · ADAPTIVE PACE</text>
+    <rect x="26" y="164" width="266" height="7" rx="3.5" fill="#3a2d1e"/>
+    <rect x="26" y="164" width="224" height="7" rx="3.5" fill="#c98a3d"/>
+    <text x="26" y="204" font-size="12" fill="#7ea99a" letter-spacing="1.2">NEXT REP IN 0.8S</text>
+  </g>
+</svg>
