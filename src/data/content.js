@@ -4,6 +4,8 @@
    Nothing in components/ needs to be touched to re-skin the portfolio.
    ========================================================================== */
 
+export const ASSET_BASE = import.meta.env.BASE_URL
+
 /* ------------------------------------------------------------------ THEME */
 /* Brand tokens shared by UI + 3D. Warm road-trip palette — dawn amber,
    ink, cream, muted teal/plum. Deliberately NOT generic purple-blue. */
@@ -69,7 +71,7 @@ export const IDENTITY = {
   ],
   resumeUrl: 'https://github.com/Innovator123-sudo',
   bookUrl: 'mailto:bhusalmohan83@gmail.com?subject=Project%20idea',
-  portrait: '/art/portrait-photo.jpg',
+  portrait: `${ASSET_BASE}art/portrait-photo.jpg`,
   portraitAlt:
     'Samrat Bhusal smiling at the camera in a navy jacket, giving two thumbs up.',
 }
@@ -168,7 +170,7 @@ const PROJECTS = {
       description:
         'A privacy-first web app that reads your expression on-device and recommends video memes that match your mood. Four independent face-AI voters fuse into one read, then a tag-matching engine picks the clips. Photos and camera frames never leave the browser.',
       stack: ['React', 'Vite', 'TensorFlow.js', 'face-api', 'ONNX'],
-      image: '/art/project-facememe.jpg',
+      image: `${ASSET_BASE}art/project-facememe.jpg`,
       imageAlt:
         'FaceMeme Finder interface with a live scan panel, face-reading instructions and a local clip library.',
       metric: '386 clips · 4-voter AI',
@@ -192,7 +194,7 @@ const PROJECTS = {
       description:
         'A browser fitness arena with MediaPipe pose tracking and live WebRTC rooms. Camera frames stay local; only rep events travel. The bot re-paces itself from your rep speed, so every round stays close — no wearables, no tapping.',
       stack: ['React', 'TypeScript', 'MediaPipe', 'Socket.io', 'WebRTC'],
-      image: '/art/project-pushup.svg',
+      image: `${ASSET_BASE}art/project-pushup.svg`,
       imageAlt:
         'Pushup Pro interface with a pose-tracked skeleton, rep counter and adaptive bot score.',
       metric: '0 wearables · 100% browser',
@@ -212,7 +214,7 @@ const PROJECTS = {
       description:
         'A phone-first remote for Android TV that pairs over your home Wi-Fi. Palm position steers the D-pad, thumbs-up confirms, and letters drawn in the air become search text — no extra app install.',
       stack: ['JavaScript', 'Android TV Protocol', 'WebRTC', 'PWA', 'Canvas'],
-      image: '/art/project-remote.jpg',
+      image: `${ASSET_BASE}art/project-remote.jpg`,
       imageAlt:
         'Online Remote landing page with a dark interface and gesture instructions for a browser-based TV remote.',
       metric: 'Palm + gesture control',
@@ -233,7 +235,7 @@ const PROJECTS = {
       description:
         'An interactive jutsu playground where MediaPipe tracks hand signs in the browser. Chain the right sequence to trigger Rasengan, Chidori, shadow clones and Sharingan effects, complete with sound and full-screen animation.',
       stack: ['HTML', 'CSS', 'JavaScript', 'MediaPipe', 'Web Audio'],
-      image: '/art/project-naruto.jpg',
+      image: `${ASSET_BASE}art/project-naruto.jpg`,
       imageAlt:
         'Naruto Ultimate Jutsu Hub homepage with glowing jutsu cards and a hand-sign camera panel.',
       metric: '14 hand-sign sequences',
@@ -254,7 +256,7 @@ const PROJECTS = {
       description:
         'A small music-discovery app that turns a mood — happy, heartbreak, motivation, calm — into a hand-picked song suggestion, with a lightweight interface that gets out of the way.',
       stack: ['HTML', 'CSS', 'JavaScript', 'REST API'],
-      image: '/art/project-songmood.jpg',
+      image: `${ASSET_BASE}art/project-songmood.jpg`,
       imageAlt:
         'Song Mood Suggestion page with a mood input, blue musical background and a Suggest Songs button.',
       metric: 'Mood → music',
@@ -269,7 +271,7 @@ const PROJECTS = {
       description:
         'A Godot platformer about a small wizard escaping an enchanted jungle. I built the levels, movement, spells and the hand-painted world as an early game-development experiment.',
       stack: ['Godot', 'GDScript', 'Pixel art'],
-      image: '/art/project-lumina.jpg',
+      image: `${ASSET_BASE}art/project-lumina.jpg`,
       imageAlt:
         'Lumina game art: a small dark wizard with glowing eyes floating above a green jungle horizon.',
       metric: 'Playable on itch.io',

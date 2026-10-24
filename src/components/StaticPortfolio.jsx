@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { IDENTITY, STATIONS } from '../data/content'
+import { ASSET_BASE, IDENTITY, STATIONS } from '../data/content'
 import { useJourney } from '../state/journeyStore'
 import { CONTENT_COMPONENTS } from './content'
 import {
@@ -169,7 +169,7 @@ export function StaticPortfolio({ onEnterExperience, reason }) {
 
           <figure className="reading-hero__figure">
             <img
-              src="/photos/open-road.jpg"
+              src={`${ASSET_BASE}photos/open-road.jpg`}
               alt="An empty road running toward distant hills in warm daylight."
               width="1200"
               height="800"

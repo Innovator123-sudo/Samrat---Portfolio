@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { FINALE as HIRE, IDENTITY, STATIONS } from '../data/content'
+import { ASSET_BASE, FINALE as HIRE, IDENTITY, STATIONS } from '../data/content'
 import { useJourney } from '../state/journeyStore'
 import { ArrowRight, GitHubIcon, MailIcon, PlayIcon, ReadingIcon } from './icons'
 
@@ -35,7 +35,7 @@ export function EndCard({ onRead }) {
     >
       <img
         className="end-card__photo"
-        src="/photos/open-road.jpg"
+        src={`${ASSET_BASE}photos/open-road.jpg`}
         alt=""
         aria-hidden="true"
         loading="lazy"
